@@ -9,31 +9,46 @@ import Package from './Components/Package/Package';
 import Offers from './Components/Offers/Offers';
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
+import NotFound from './Components/NotFound/NotFound';
+import Booking from './Components/Booking/Booking/Booking';
+import Login from './Components/Login/Login/Login';
+import PrivateRoute from './Components/Login/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/offers">
-            <Offers></Offers>
-          </Route>
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/offers">
+              <Offers></Offers>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/booking/:offersSl">
+              <Booking></Booking>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

@@ -9,24 +9,27 @@ import './Testimonial.css';
 
 const Testimonial = () => {
     return (
-        <div className='container bottom-image mb-5'>
-            <div className='image'>
-                <img className='img-fluid' src={img1} alt="" />
-            </div>
-            <div className='image'>
-                <img className='img-fluid' src={img2} alt="" />
-            </div>
-            <div className='image'>
-                <img className='img-fluid' src={img3} alt="" />
-            </div>
-            <div className='image'>
-                <img className='img-fluid' src={img4} alt="" />
-            </div>
-            <div className='image'>
-                <img className='img-fluid' src={img5} alt="" />
-            </div>
-            <div className='image'>
-                <img className='img-fluid' src={img6} alt="" />
+        <div>
+            <h2 className='text-primary mb-5'>Gallery</h2>
+            <div className='container bottom-image mb-5'>
+                <div className='image'>
+                    <img className='img-fluid' src={img1} alt="" />
+                </div>
+                <div className='image'>
+                    <img className='img-fluid' src={img2} alt="" />
+                </div>
+                <div className='image'>
+                    <img className='img-fluid' src={img3} alt="" />
+                </div>
+                <div className='image'>
+                    <img className='img-fluid' src={img4} alt="" />
+                </div>
+                <div className='image'>
+                    <img className='img-fluid' src={img5} alt="" />
+                </div>
+                <div className='image'>
+                    <img className='img-fluid' src={img6} alt="" />
+                </div>
             </div>
         </div>
     );
