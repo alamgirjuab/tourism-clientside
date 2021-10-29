@@ -1,0 +1,38 @@
+[
+    {
+        "sl": 1,
+        "name": "Tour in Desert",
+        "description": "The Sahara Desert looms large in the imagination of the traveler in Morocco recommended places by popular travel guides, unleash the hidden treasure.",
+        "img": "https://i.ibb.co/q9VXGVY/desert.jpg"
+    },
+    {
+        "sl": 2,
+        "name": "Tour in Forest",
+        "description": "It is an evergreen and mystic forest as well as one of the best fresh water swamp forests in this world recommended places by popular travel guides, unleash the hidden treasure.",
+        "img": "https://i.ibb.co/ZN7n0nm/forest.jpg"
+    },
+    {
+        "sl": 3,
+        "name": "Tour in Heritage",
+        "description": "Explore the land & people with coverage of all UNESCO world heritage sites and recommended places by popular travel guides, unleash the hidden treasure.",
+        "img": "https://i.ibb.co/7pgZXkn/heritage.jpg"
+    },
+    {
+        "sl": 4,
+        "name": "Tour in Mountain",
+        "description": "There’s nothing quite like standing at the top of a mountain, with the clouds and the rest of the world stretched out below you.",
+        "img": "https://i.ibb.co/bz769q6/mounten.jpg"
+    },
+    {
+        "sl": 5,
+        "name": "Tour in Sea",
+        "description": "Sea Tours is a dynamic family of experienced people full of positive energy, knowledgeable about destinations you will visit.",
+        "img": "https://i.ibb.co/s9LvdXZ/sea.jpg"
+    },
+    {
+        "sl": 6,
+        "name": "Tour in World",
+        "description": "Two complete strangers are on a one-of-a-kind tour around the world and you’re invited to follow along.",
+        "img": "https://i.ibb.co/3pprbk6/world.jpg"
+    }
+]
