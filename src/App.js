@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Shared/Header/Header';
 import Home from './Components/Home/Home';
 import AuthProvider from './context/AuthProvider';
 import Footer from './Components/Shared/Footer/Footer';
-import Package from './Components/Package/Package';
 import Offers from './Components/Offers/Offers';
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
@@ -39,7 +37,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/booking/:offersSl">
+            <PrivateRoute path="/booking/:offersId">
               <Booking></Booking>
             </PrivateRoute>
             <Route path="*">

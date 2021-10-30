@@ -2,10 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router';
 
 const Booking = () => {
-    const { offersSl } = useParams();
+    const { offersId } = useParams();
     return (
         <div>
-            <h2>This is Booking: {offersSl}</h2>
+            <h2>This is Booking: {offersId}</h2>
         </div>
     );
 };
