@@ -33,7 +33,7 @@ const ManageOrders = () => {
                 services.map(service => <div
                     key={service._id} className="d-flex justify-content-between mb-5 align-items-center order-container">
                     <img className="img-fluid" src={service.img} alt="" />
-                    <div className="mx-5">
+                    <div className="mx-5 text-white">
                         <h3 className="mb-5">{service.name}</h3>
                         <p>{service.description}</p>
                     </div>
