@@ -1,0 +1,11 @@
+.order-container{
+    background-color: rgb(198, 198, 250);
+}
+
+.order-container button{
+    padding: 135px 10px;
+    background-color: pink;
+    color: white;
+    font-weight: 700;
+    border: 2px double green;
+}

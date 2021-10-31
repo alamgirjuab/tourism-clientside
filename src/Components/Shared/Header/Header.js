@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../img/logo.png';
@@ -9,7 +9,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <>
-            <Navbar bg="info" variant="dark" sticky="top" collapseOnSelect expand="lg">
+            <Navbar className="py-4" bg="info" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
                     <NavLink to="/">
                         <img src={logo} alt="" />
@@ -20,13 +20,29 @@ const Header = () => {
                         <NavLink className='link' to="/about">About Us</NavLink>
                         <NavLink className='link' to="/offers">Offers</NavLink>
                         <NavLink className='link' to="/contact">Contact Us</NavLink>
+
+                        {/*-------------------------- 
+                          | Conditional menu option |
+                          -------------------------*/}
                         {user?.email ?
-                            <Button onClick={logOut} variant="light">Logout</Button> :
+                            <NavLink className='link' to="/myOrders">My Orders</NavLink> :
+                            <NavLink className='link' to="/"></NavLink>
+                        }
+                        {user?.email ?
+                            <NavLink className='link' to="/addService">Add a new service</NavLink> :
+                            <NavLink className='link' to="/"></NavLink>
+                        }
+                        {user?.email ?
+                            <NavLink className='link' to="/manageOrders">Manage all orders</NavLink> :
+                            <NavLink className='link' to="/"></NavLink>
+                        }
+                        {user?.email ?
+                            <Button className="me-3" onClick={logOut} variant="light">Logout</Button> :
                             <NavLink className='link' to="/login">Login</NavLink>
                         }
 
                         <Navbar.Text>
-                            Signed in as: <a href="#login">{user?.displayName}</a>
+                            <a href="#login">{user?.displayName}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
