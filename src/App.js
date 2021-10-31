@@ -14,6 +14,7 @@ import PrivateRoute from './Components/Login/Login/PrivateRoute/PrivateRoute';
 import AddService from './Components/AddService/AddService';
 import ManageOrders from './Components/ManageOrders/ManageOrders';
 import MyOrders from './Components/MyOrders/MyOrders';
+import BookingForm from './Components/BookingForm/BookingForm';
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/myOrders">
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/bookingForm">
+              <BookingForm></BookingForm>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
