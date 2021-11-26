@@ -17,9 +17,9 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <NavLink className='link' to="/home">Home</NavLink>
-                        <NavLink className='link' to="/about">About Us</NavLink>
+                        <NavLink className='link' to="/about">About us</NavLink>
                         <NavLink className='link' to="/offers">Offers</NavLink>
-                        <NavLink className='link' to="/contact">Contact Us</NavLink>
+                        <NavLink className='link' to="/contact">Contact us</NavLink>
 
                         {/*-------------------------- 
                           | Conditional menu option |
