@@ -10,7 +10,7 @@ import './Testimonial.css';
 const Testimonial = () => {
     return (
         <div>
-            <h2 className='text-primary mb-5'>Gallery</h2>
+            <h2 className='text-primary text-center mb-5'>Gallery</h2>
             <div className='container bottom-image mb-5'>
                 <div className='image'>
                     <img className='img-fluid' src={img1} alt="" />

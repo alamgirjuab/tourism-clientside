@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
                 <div className='footer'>
                     <hr className='border-white' />
-                    <p className='pb-5'>Copyright @ REACT TOURISM || 2021</p>
+                    <p className='pb-5 text-center'>Copyright @ REACT TOURISM || 2022</p>
                 </div>
             </div>
         </div>

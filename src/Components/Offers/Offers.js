@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useFirebase from '../../hooks/useFirebase';
 import Package from '../Package/Package';
 import './Offers.css';
 
 const Offers = () => {
+    const { isLoading } = useFirebase();
     const [offers, setOffers] = useState([])
     useEffect(() => {
         fetch('https://creepy-catacombs-89683.herokuapp.com/services')
@@ -18,6 +20,11 @@ const Offers = () => {
                         key={offer.id}
                         offer={offer}
                     ></Package>)
+                }
+                {
+                    isLoading && <div className="spinner-border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
                 }
             </div>
 
