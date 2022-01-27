@@ -7,7 +7,7 @@ const Pagination = ({ data, pageHandler }) => {
         pageNumbers.push(i);
     }
     return (
-        <div>
+        <div className="mt-4">
             {
                 pageNumbers.map(page => <div className="page-number" onClick={() => pageHandler(page)}>{page}</div>)
             }

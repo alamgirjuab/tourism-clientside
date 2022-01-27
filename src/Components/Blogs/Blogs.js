@@ -21,7 +21,7 @@ const Blogs = () => {
             {
                 data.length >= 1 ? <div className="container">
                     <h2 className="text-center mb-5 text-primary">-- Blogs and User Experience --</h2>
-                    {perPage.map(blog => <div key={blog.id} className="shadow p-3 mb-5 bg-body rounded">
+                    {perPage.map(blog => <div key={blog.id} className="shadow p-3 mb-3 bg-body rounded">
                         <h3>{blog.travelName}</h3>
                         <p>{blog.travelExperience}</p>
                         <p>Expense: ${blog.expense}</p>
