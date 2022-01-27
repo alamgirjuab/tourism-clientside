@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Dropdown, Navbar } from 'react-bootstrap';
+import { Container, Dropdown, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../img/logo.png';

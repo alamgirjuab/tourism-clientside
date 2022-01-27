@@ -1,0 +1,12 @@
+.page-number{
+    display: inline;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid navy;
+}
+
+.page-number:hover{
+    background-color: palegreen;
+    cursor: pointer;
+}

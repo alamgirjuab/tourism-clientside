@@ -1,28 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import image from '../../../src/img/banner.jpg';
-import './Banner.css';
+import { Carousel } from 'react-bootstrap';
+import slider2 from '../../img/slide-2.jpg';
+import slider3 from '../../img/slide-3.jpg';
+import slider4 from '../../img/slide-4.jpg';
 
 const Banner = () => {
     return (
         <div>
-            <div className='banner'>
-                <div className='container'>
-                    <div className='row align-items-center'>
-                        <div className='col-lg-6 col-md-6 col-sm-12 text-white'>
-                            <h1>Amazing Tour in Sundarban</h1>
-                            <p className='my-4'>Discover youself in one of the World Heritage sites of Bangladesh.</p>
-                            <Link className="btn btn-danger" to="/offers">Book Now</Link>
-                            {/* <button className='btn btn-danger'>Book Now</button> */}
-                        </div>
-                        <div className='col-lg-6 col-md-6 col-sm-12 my-5'>
-                            <img className='img-fluid rounded' src={image} alt="" />
-                        </div>
+            <Carousel fade>
+                <Carousel.Item>
+                    <img
+                        className="img-fluid w-100"
+                        src={slider4}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="img-fluid w-100"
+                        src={slider2}
+                        alt="Second slide"
+                    />
 
-                    </div>
-                </div>
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="img-fluid w-100"
+                        src={slider3}
+                        alt="Third slide"
+                    />
 
-            </div>
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 };
